@@ -31,3 +31,21 @@ function makePizza(toppings, size){
   return newPizza;
 }
 
+$(document).ready(function(){
+  $("#formOne").submit(function(event){
+    let size = $('input[name="sizes"]:checked').val();
+    let toppings = [];
+    let currentPizza = {};
+    let cost = 0;
+    
+    $('input[name="toppings"]:checked').each(function(){
+      toppings.push($(this).val());
+    })
+    currentPizza = makePizza(toppings, size);
+    cost = currentPizza.cost();
+    $("#order").html("A " + size + " with " + currentPizza.toppings);
+    $("#cost").html("$" + cost);
+    event.preventDefault();
+  })
+})
+
