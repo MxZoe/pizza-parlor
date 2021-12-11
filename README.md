@@ -15,7 +15,16 @@ Expected output: 0;
 
 Test: It should use the toppings property to add to the cost.
 Code: pizza.cost();
-Expected output: 0;
+Expected output: 2;
+
+Test: It should use the size property to add to the cost.
+Code: switch(this.size){
+  case 'small'
+    total += 10;
+    break;
+    ...
+}
+Expected output: 12;
 
 calculate a cost based on size and number of toppings
 
