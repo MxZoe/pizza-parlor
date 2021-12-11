@@ -6,6 +6,8 @@ function Pizza(toppings, size){
 }
 Pizza.prototype.cost = function(){
   let total = 0;
+  let toppingsAmount = this.toppings.length;
+  total += toppingsAmount;
   return total;
 }
 
@@ -15,4 +17,4 @@ function makePizza(toppings, size){
   return newPizza;
 }
 
-console.log(makePizza(["Pineapple","pepperoni"], small))
+console.log(makePizza(["Pineapple","pepperoni"], "small"))
