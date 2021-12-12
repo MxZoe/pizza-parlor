@@ -43,8 +43,9 @@ $(document).ready(function(){
     })
     currentPizza = makePizza(toppings, size);
     cost = currentPizza.cost();
-    $("#order").html("A " + size + " with " + currentPizza.toppings);
     $("#cost").html("$" + cost);
+    $("#display").show();
+
     event.preventDefault();
   })
 })

@@ -10,47 +10,121 @@
 </head>
 <body>
   <div class="container">
-    <div class="header">
+    <div id="header">
       <h1>Pizza Parlor</h1>
     </div>
-    <form id="formOne">
-      <div class="form-group">
-        <label for="small">Small</label>
-        <input type="radio"  id="small" name="sizes" value="small" checked>
-        <label for="medium">Medium</label>
-        <input type="radio" id="medium" name="sizes" value="medium">
-        <label for="large">Large</label>
-        <input type="radio" id="large" name=sizes value="large">
-        <label for="x-large">Extra Large</label>
-        <input type="radio" id="x-large" name="sizes" value="x-large">
+    <div id="divider"></div>
+    <div class="row">
+      <div class="col-md-5">
+        <form id="formOne">
+          <div class="card" id="sizeSelection">
+            <div class="card-body">
+              <h4 class="card-title">Select your size:</h4>
+              <div class="form-group row">
+                <div class="col-md-3">
+                  <label for="small"><strong>Small</strong></label><br>
+                  <input type="radio"  id="small" name="sizes" value="small" checked>
+                </div> 
+                <div class="col-md-3"> 
+                  <label for="medium"><strong>Medium</strong></label><br>
+                  <input type="radio" id="medium" name="sizes" value="medium">
+                </div>
+                <div class="col-md-3">
+                  <label for="large"><strong>Large</strong></label><br>
+                  <input type="radio" id="large" name=sizes value="large">
+                </div>
+                <div class="col-md-3">
+                  <label for="x-large"><strong>Extra Large</strong></label>
+                  <input type="radio" id="x-large" name="sizes" value="x-large">
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="card" id="toppingSelection">
+            <div class="card-body">
+              <h4 class="card-title">Select your toppings:</h4>
+              <div class="form-group row">
+                <div class="col-sm-5">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <label class="form-check-label" for="pepperoni">Pepperoni</label>
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="checkbox" name="toppings" class="form-check-input" id="pepperoni" value="pepperoni"><br>
+                    </div>
+                    <div class="col-sm-8">
+                      <label class="form-check-label" for="sausage">Sausage</label>
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="checkbox" name="toppings" class="form-check-input" id="sausage" value="sausage"><br>
+                    </div>
+                    <div class="col-sm-8">
+                      <label class="form-check-label" for="pineapple">Pineapple</label>
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="checkbox" name="toppings" class="form-check-input" id="pineapple" value="pineapple"><br>
+                    </div>
+                    <div class="col-sm-8">
+                      <label class="form-check-label" for="olives">Olives</label>
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="checkbox" name="toppings" class="form-check-input" id="olives" value="olives"><br>
+                    </div>
+                    <div class="col-sm-8">
+                      <label class="form-check-label" for="peppers">Peppers</label>
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="checkbox" name="toppings" class="form-check-input" id="peppers" value="peppers">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <label class="form-check-label" for="bacon">Bacon</label>
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="checkbox" name="toppings" class="form-check-input" id="bacon" value="bacon"><br>
+                    </div>
+                    <div class="col-sm-8">
+                      <label class="form-check-label" for="onions">Onions</label>
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="checkbox" name="toppings" class="form-check-input" id="onions" value="onions"><br>
+                    </div>
+                    <div class="col-sm-8">
+                      <label class="form-check-label" for="extra-cheese">Extra Cheese</label>
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="checkbox" name="toppings" class="form-check-input" id="extra-cheese" value="extra cheese"><br>
+                    </div>
+                    <div class="col-sm-8">
+                      <label class="form-check-label" for="anchovies">Anchovies</label>
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="checkbox" name="toppings" class="form-check-input" id="anchovies" value="anchovies"><br>
+                    </div>
+                    <div class="col-sm-8">
+                      <label class="form-check-label" for="bbq-chicken">BBQ Chicken</label>
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="checkbox" name="toppings" class="form-check-input" id="bbq-chicken" value="bbq chicken">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success" id="submitButton">Submit</button>
+        </form>
       </div>
-      <div class="form-group">
-        <label class="form-check-label" for="pepperoni">pepperoni</label>
-        <input type="checkbox" name="toppings" class="form-check-input" id="pepperoni" value="pepperoni">
-        <label class="form-check-label" for="sausage">sausage</label>
-        <input type="checkbox" name="toppings" class="form-check-input" id="sausage" value="sausage">
-        <label class="form-check-label" for="pineapple">pineapple</label>
-        <input type="checkbox" name="toppings" class="form-check-input" id="pineapple" value="pineapple">
-        <label class="form-check-label" for="olives">olives</label>
-        <input type="checkbox" name="toppings" class="form-check-input" id="olives" value="olives">
-        <label class="form-check-label" for="peppers">peppers</label>
-        <input type="checkbox" name="toppings" class="form-check-input" id="peppers" value="peppers">
-        <label class="form-check-label" for="onions">onions</label>
-        <input type="checkbox" name="toppings" class="form-check-input" id="onions" value="onions">
-        <label class="form-check-label" for="canadian-bacon">canadian-bacon</label>
-        <input type="checkbox" name="toppings" class="form-check-input" id="canadian-bacon" value="canadian-bacon">
-        <label class="form-check-label" for="anchovies">anchovies</label>
-        <input type="checkbox" name="toppings" class="form-check-input" id="anchovies" value="anchovies">
-        <label class="form-check-label" for="extra-cheese">extra-cheese</label>
-        <input type="checkbox" name="toppings" class="form-check-input" id="extra-chees" value="extra-chees">
-        <label class="form-check-label" for="bbq-chicken">bbq-chicken</label>
-        <input type="checkbox" name="toppings" class="form-check-input" id="bbq-chicken" value="bbq-chicken">
+    </div>
+    <div class="card" id="display">
+      <div class=card-body>
+        <h5 class="card-title">Your total is: </h5>
+        <p class="card-text"><span id="cost"></span></p>
       </div>
-      <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
-    </form>
-    <div id="display">
-      <p>Your order: <span id="order"></span></p>
-      <p>Your total: <span id="cost"></span></p>
     </div>
   </div>
 </body>
