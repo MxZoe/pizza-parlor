@@ -18,7 +18,7 @@ This website allows a user to select a size and toppings for a pizza and then ca
 ## Setup/Installation Requirements
 
 * Go to mxzoe.github.io/language-selecter to use this project.
-* You can also go to https://github.com/MxZoe/language-suggester to clone or download the project. Then you can navigate to the lang-selecter folder and open index.html to open the project as a local site.
+* You can also go to https://github.com/MxZoe/pizza-parlor to clone or download the project. Then you can navigate to the lang-selecter folder and open index.html to open the project as a local site.
 
 ## Known Bugs
 
